@@ -12,7 +12,7 @@ def convert_base(number, from_base, to_base):
     return result if result != '' else '0'
 
 
-number = '1101'
+number = '25'
 from_base = 10
 to_base = 2
 

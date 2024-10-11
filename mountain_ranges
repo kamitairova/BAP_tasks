@@ -1,0 +1,19 @@
+def k(numbers):
+    differences = [] 
+    for i in range(len(numbers) - 1):
+        diff = abs(numbers[i] - numbers[i + 1]) 
+        differences.append(diff)
+    
+    max_diff = max(differences)
+    min_diff = min(differences)
+
+    k = max_diff - 1
+
+    if k in differences:
+        return k
+    else:
+        return None  
+
+numbers = [2,3,1,5,2,1,4,8,7,9,6]
+k = k(numbers)
+print(k)
